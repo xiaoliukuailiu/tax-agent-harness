@@ -6,4 +6,5 @@ __pycache__/
 data/harness.db
 data/harness.db-wal
 data/harness.db-shm
+data/official/
 dist/

@@ -68,6 +68,7 @@ python -m harness.cli
 ```
 
 数据库 `data/harness.db` 自动从 `data/official/` 的 Excel 生成，`demo.py` 每次重置初始数据。
+**注意**：出于版权考虑，官方材料包（Excel / 规则 docx）**不随仓库分发**——克隆后需将材料包放入 `data/official/`，再运行 `python scripts/import_seed.py` 生成数据库，然后即可运行 `demo.py` 与 `pytest`。
 接入大模型见文末「接入模型」。
 
 ---
@@ -108,8 +109,8 @@ SQLite（WAL）
 ├── scripts/package.py       打包分发（排除 .env / 缓存 / wal）
 ├── tests/test_traps.py      24 条回归测试（15 类陷阱全覆盖）
 └── data/
-    ├── official/            官方材料包（Excel / 规则 / 说明）
-    └── harness.db           生成的数据库（不入库，可随时重建）
+    ├── official/            官方材料包（版权原因不随仓库分发，需自行放置）
+    └── harness.db           生成的数据库（不入库，`import_seed.py` 可随时重建）
 ```
 
 ---
