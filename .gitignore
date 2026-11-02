@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.pytest_tmp/
+.pytest_cache/
+.env
+data/harness.db
+data/harness.db-wal
+data/harness.db-shm
+dist/

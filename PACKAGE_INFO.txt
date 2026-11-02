@@ -1,0 +1,15 @@
+tax-agent-harness v0.1.0
+
+打包时间：2026-10-28 19:35:41
+文件数：34
+解压后大小：559.3 KB
+
+快速开始：
+  pip install -r requirements.txt
+  python demo.py     # 一键演示，不需要模型 Key
+  pytest -q          # 24 条陷阱回归测试
+
+说明：
+  data/harness.db 已从 data/official 的官方 Excel 重建，为初始数据。
+  若需重新生成：python scripts/import_seed.py
+  本包不含 .env，接入模型请参照 .env.example 自行创建。
